@@ -73,12 +73,6 @@ export const CalculatorScreen = () => {
 
   const pressEqual = (): void => {
     try {
-      // if (nextDigit) {
-      //   setExpression(prev => {
-      //     prev.pop()
-      //     return prev
-      //   })
-      // }
 
       const result = (nextDigit)?eval(expression.slice(0,expression.length-1).join('')):eval(expression.join(''))
       if (!result) {
